@@ -3,18 +3,22 @@
   "description": "Agent sample app",
   "version": "0.0.1",
   "scripts": {
-    "start": "node ./App.js"
+    "start": "node ./App.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "async": "^2.1.5",
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
     "readline": "~1.3.0",
-    "request": "^2.79.0",
-    "require": "^2.4.20"
+    "request": "^2.82.0",
+    "require": "^2.4.20",
+    "snyk": "^1.424.4"
   },
   "engines": {
     "node": ">=6.9.1",
     "npm": ">=3.10.9"
-  }
+  },
+  "snyk": true
 }
